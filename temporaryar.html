@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> تاكد من المعلومات ثم اعد المحاولة</title>
+  <title>Verifica la información y vuelve a intentarlo</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -44,14 +44,14 @@
 </head>
 <body>
   <div class="error-container">
-    <h2>خطأ في معالجة المعلومات</h2>
-    <p>قد تكون المشكلة في كلمة السر او البريد الالكتروني  المرجو اعادة المحاولة</p>
-    <p class="countdown">سيتم تحويلك إلى الموقع الآخر في <span id="timer">5</span> ثوانٍ.</p>
+    <h2>Error en el procesamiento de la información</h2>
+    <p>El problema podría estar en la contraseña o el correo electrónico. Por favor, inténtalo de nuevo.</p>
+    <p class="countdown">Serás redirigido a otro sitio en <span id="timer">5</span> segundos.</p>
   </div>
 
   <script>
-    // تعداد تنازلي
-    var countdown = 5; // عدد الثواني
+    // Cuenta regresiva
+    var countdown = 5; // Número de segundos
 
     var timer = setInterval(function() {
       countdown--;
@@ -59,8 +59,8 @@
 
       if (countdown <= 0) {
         clearInterval(timer);
-        // توجيه المستخدم إلى الموقع الآخر بعد انتهاء العداد
-        window.location.href ='index.html'; // استبدل برابط الموقع الآخر
+        // Redirige al usuario a otro sitio después de que termine la cuenta regresiva
+        window.location.href ='index.html'; // Reemplaza con el enlace al otro sitio
       }
     }, 1000);
   </script>
